@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "Generator",
+    "pageId": "Vendor Add Order",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetUUID: () => {\n\t\tlet prefix;\n\t\tlet d = new Date().getTime();\n\t\td += (parseInt(Math.random() * 100)).toString();\n\t\tif (undefined === prefix) {\n\t\t\tprefix = 'uid-';\n\t\t}\n\t\td = prefix + d;\n\t\treturn d;\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Vendor Add Order_Generator",
+  "deleted": false,
+  "gitSyncId": "6312614d9316f9675669ac84_6318e97d1df89313e257c9c4"
+}

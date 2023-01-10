@@ -1,0 +1,67 @@
+{
+  "pages": [
+    {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
+      "id": "Choose Category",
+      "isDefault": false
+    },
+    {
+      "id": "Vendor Add Order",
+      "isDefault": false
+    },
+    {
+      "id": "Collaborator Add Order",
+      "isDefault": false
+    },
+    {
+      "id": "Chemist Add Order",
+      "isDefault": false
+    },
+    {
+      "id": "Admin Panel",
+      "isDefault": false
+    },
+    {
+      "id": "CDD Notification Success",
+      "isDefault": false
+    },
+    {
+      "id": "Actions All Compounds",
+      "isDefault": false
+    },
+    {
+      "id": "All Compounds",
+      "isDefault": false
+    },
+    {
+      "id": "Compound Location",
+      "isDefault": false
+    },
+    {
+      "id": "Add Location",
+      "isDefault": false
+    },
+    {
+      "id": "Notify Success",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#C7F3E3",
+  "icon": "calender",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
