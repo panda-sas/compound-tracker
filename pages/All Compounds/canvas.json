@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 74,
+          "version": 75,
           "minHeight": 780,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -4307,6 +4307,7 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "All Compounds_SelectAOrder",
               "name": "SelectAOrder",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",

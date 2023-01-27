@@ -6,7 +6,6 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tsearch: () => {\n\t\tif(search.text.length==0){\n\t\t\treturn select_cars.data\n\t\t}\n\t\telse{\n\t\t\treturn(select_cars.data.filter(word => word.vin.toLowerCase().includes(search.text.toLowerCase())))\n\t\t}\n\t},\n\t\tservice_due: () => {\n\t\t  \t\tvar todayDate =moment().format(moment.HTML5_FMT.DATE)  \n\t\t\t\t\treturn todayDate\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",

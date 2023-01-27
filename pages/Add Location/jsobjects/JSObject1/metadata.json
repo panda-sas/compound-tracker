@@ -6,7 +6,6 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tnext_service: () => {\n\t\t\t\tif(!DeliveredDate_input.formattedDate) {return ''}\n\t\t     var dt = new Date(DeliveredDate_input.formattedDate)\n         dt.setMonth( dt.getMonth() + interval.text );\t\n\t\t     return dt \n\t}\n}",
     "variables": [
       {
         "name": "myVar1",
