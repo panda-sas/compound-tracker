@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 610,
+          "bottomRow": 780,
           "containerStyle": "none",
           "snapRows": 47,
           "parentRowSpace": 1,
@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "multiRowSelection": true,
+              "multiRowSelection": false,
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
@@ -86,16 +86,10 @@
                   "key": "primaryColumns.Location.computedValue"
                 },
                 {
-                  "key": "primaryColumns.IsRecieved.computedValue"
-                },
-                {
                   "key": "primaryColumns.IsCDDRegistered.computedValue"
                 },
                 {
                   "key": "primaryColumns.rowIndex.computedValue"
-                },
-                {
-                  "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.EditActions1.saveButtonColor"
@@ -111,6 +105,12 @@
                 },
                 {
                   "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "primaryColumns.IsReceived.computedValue"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "leftColumn": 0,
@@ -169,9 +169,9 @@
                 "PlateMap",
                 "Form",
                 "Location",
-                "IsRecieved",
                 "IsCDDRegistered",
                 "rowIndex",
+                "IsReceived",
                 "EditActions1"
               ],
               "dynamicPropertyPathList": [
@@ -180,10 +180,16 @@
                 },
                 {
                   "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 53,
+              "bottomRow": 70,
               "columnWidthMap": {
                 "task": 245,
                 "step": 62,
@@ -192,7 +198,14 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.IsReceived.onCheckChange"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "PKey": {
@@ -214,14 +227,14 @@
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
-                  "isCellVisible": true,
+                  "isCellVisible": false,
                   "isDerived": false,
                   "label": "PKey",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PKey\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Target": {
                   "allowCellWrapping": false,
@@ -249,7 +262,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Target\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Project": {
                   "allowCellWrapping": false,
@@ -277,7 +290,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Project\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Collaborator": {
                   "allowCellWrapping": false,
@@ -305,7 +318,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Collaborator\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Vendor": {
                   "allowCellWrapping": false,
@@ -333,7 +346,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Vendor\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Chemist": {
                   "allowCellWrapping": false,
@@ -350,7 +363,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": true,
                   "isEditable": true,
@@ -361,7 +374,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Chemist\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "ShipmentDate": {
                   "allowCellWrapping": false,
@@ -389,7 +402,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ShipmentDate\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "TrackingID": {
                   "allowCellWrapping": false,
@@ -417,7 +430,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TrackingID\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Amount": {
                   "allowCellWrapping": false,
@@ -445,7 +458,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Amount\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "PlateMap": {
                   "allowCellWrapping": false,
@@ -473,7 +486,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PlateMap\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Form": {
                   "allowCellWrapping": false,
@@ -501,7 +514,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Form\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Scientist": {
                   "allowCellWrapping": false,
@@ -529,7 +542,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Scientist\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "Location": {
                   "allowCellWrapping": false,
@@ -556,36 +569,10 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Location\"]))}}",
-                  "validation": {},
-                  "cellBackground": "#fafafa"
-                },
-                "IsRecieved": {
-                  "allowCellWrapping": false,
-                  "index": 13,
-                  "width": 150,
-                  "originalId": "IsRecieved",
-                  "id": "IsRecieved",
-                  "alias": "IsRecieved",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "switch",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "IsRecieved",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IsRecieved\"]))}}",
-                  "validation": {},
-                  "cellBackground": "#fafafa"
+                  "validation": {
+                    "isColumnEditableCellRequired": false
+                  },
+                  "cellBackground": "#FFFFFF"
                 },
                 "IsCDDRegistered": {
                   "allowCellWrapping": false,
@@ -602,7 +589,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": true,
                   "isEditable": true,
@@ -613,7 +600,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IsCDDRegistered\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "rowIndex": {
                   "allowCellWrapping": false,
@@ -634,14 +621,14 @@
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
-                  "isCellVisible": true,
+                  "isCellVisible": false,
                   "isDerived": false,
                   "label": "rowIndex",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
                   "validation": {},
-                  "cellBackground": "#fafafa"
+                  "cellBackground": "#FFFFFF"
                 },
                 "EditActions1": {
                   "allowCellWrapping": false,
@@ -675,16 +662,47 @@
                   "discardBorderRadius": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "discardButtonVariant": "TERTIARY",
                   "isSaveDisabled": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( !Open_Orders_Table.updatedRowIndices.includes(currentIndex)))}}",
-                  "isDiscardDisabled": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( !Open_Orders_Table.updatedRowIndices.includes(currentIndex)))}}"
+                  "isDiscardDisabled": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( !Open_Orders_Table.updatedRowIndices.includes(currentIndex)))}}",
+                  "onSave": "{{OrderValidations.validate() && ORDER_UPDATE.run(() => showAlert('Saved','success'), () => {showAlert('Failed','error')})}}",
+                  "cellBackground": "#FFFFFF"
+                },
+                "IsReceived": {
+                  "allowCellWrapping": false,
+                  "index": 13,
+                  "width": 150,
+                  "originalId": "IsReceived",
+                  "id": "IsReceived",
+                  "alias": "IsReceived",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "switch",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "IsReceived",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Open_Orders_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IsReceived\"]))}}",
+                  "validation": {},
+                  "cellBackground": "#FFFFFF",
+                  "onCheckChange": ""
                 }
               },
               "key": "mikwwu5nhm",
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "nivo76nvth",
               "allowAddNewRow": false,
-              "tableData": "{{ORDER_FETCH_ALL.data}}",
+              "tableData": "{{ORDER_SELECT_OPEN.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -694,7 +712,7 @@
               "isVisibleSearch": true,
               "originalTopRow": 7,
               "isVisiblePagination": true,
-              "cellBackground": "#fafafa",
+              "cellBackground": "#FFFFFF",
               "verticalAlignment": "CENTER"
             },
             {
@@ -958,8 +976,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "OpenOrders_ORDER_FETCH_ALL",
-              "name": "ORDER_FETCH_ALL",
+              "id": "OpenOrders_ORDER_SELECT_OPEN",
+              "name": "ORDER_SELECT_OPEN",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
               "jsonPathKeys": [],

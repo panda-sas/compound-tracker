@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "INSERT_NEW_ORDER",
+    "name": "ORDER_UPDATE",
     "datasource": {
       "name": "sid-tamu-drive",
       "pluginId": "google-sheets-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "OrderEntryForm",
+    "pageId": "OpenOrders",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -21,7 +21,7 @@
       "selfReferencingDataPaths": [],
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "UPDATE_ONE"
         },
         "entityType": {
           "data": "ROWS"
@@ -42,7 +42,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{\n\t\"Target\": {{InpTarget.text}},\n\t\"Project\": {{InpProject.text}},\n\t\"Collaborator\": {{InpCollaborator.text}},\n\t\"Vendor\": {{InpVendor.text}},\n\t\"Chemist\": {{InpChemist.text}},\n\t\"ShipmentDate\": {{DateShipment.formattedDate}},\n\t\"TrackingID\": {{InpTrackingId.text}},\n\t\"Amount\": {{InpAmount.text}},\n\t\"Scientist\": {{InpScientist.text}},\n\t\"Form\": {{SelectFormVial.selectedOptionValue}},\n\t\"PKey\": {{Generator.getUUID()}},\n\t\"IsReceived\": {{false}},\n\t\"IsCDDRegistered\" : {{false}}\n}\n"
+          "data": "{{\n{...Open_Orders_Table.selectedRow }\n}}"
         },
         "sheetName": {
           "data": "All"
@@ -73,25 +73,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "DateShipment.formattedDate",
-      "Generator.getUUID()",
-      "InpAmount.text",
-      "InpChemist.text",
-      "InpCollaborator.text",
-      "InpProject.text",
-      "InpScientist.text",
-      "InpTarget.text",
-      "InpTrackingId.text",
-      "InpVendor.text",
-      "SelectFormVial.selectedOptionValue",
-      "false"
+      "\n{...Open_Orders_Table.selectedRow }\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "OrderEntryForm_INSERT_NEW_ORDER",
+  "id": "OpenOrders_ORDER_UPDATE",
   "deleted": false,
-  "gitSyncId": "6312614d9316f9675669ac84_63e3e41e576df82f0e7eec16"
+  "gitSyncId": "6312614d9316f9675669ac84_63e3f8721e242279f590d9bc"
 }

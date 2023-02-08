@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "ORDER_FETCH_ALL",
+    "name": "ORDER_SELECT_OPEN",
     "datasource": {
       "name": "sid-tamu-drive",
       "pluginId": "google-sheets-plugin",
@@ -63,13 +63,30 @@
         },
         "where": {
           "data": {
+            "condition": "OR",
+            "children": [
+              {
+                "condition": "EQ",
+                "key": "IsReceived",
+                "value": "FALSE"
+              },
+              {
+                "key": "IsCDDRegistered",
+                "condition": "EQ",
+                "value": "FALSE"
+              }
+            ]
+          },
+          "componentData": {
             "condition": "AND",
             "children": [
               {
                 "condition": "LT"
               }
             ]
-          }
+          },
+          "viewType": "component",
+          "jsonData": ""
         }
       }
     },
@@ -84,7 +101,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "OpenOrders_ORDER_FETCH_ALL",
+  "id": "OpenOrders_ORDER_SELECT_OPEN",
   "deleted": false,
   "gitSyncId": "6312614d9316f9675669ac84_63e3ce9123afe1799ffa7d2c"
 }

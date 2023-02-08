@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "OrderValidations",
+    "pageId": "OpenOrders",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "OpenOrders_OrderValidations",
+  "deleted": false,
+  "gitSyncId": "6312614d9316f9675669ac84_63e3f30f23afe1799ffa7f3b"
+}
