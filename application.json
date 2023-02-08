@@ -1,51 +1,15 @@
 {
   "pages": [
     {
-      "id": "Home",
+      "id": "Landing",
       "isDefault": true
     },
     {
-      "id": "Choose Category",
-      "isDefault": false
-    },
-    {
-      "id": "Vendor Add Order",
-      "isDefault": false
-    },
-    {
-      "id": "Collaborator Add Order",
-      "isDefault": false
-    },
-    {
-      "id": "Chemist Add Order",
-      "isDefault": false
-    },
-    {
-      "id": "Admin Panel",
-      "isDefault": false
-    },
-    {
-      "id": "CDD Notification Success",
+      "id": "OrderEntryForm",
       "isDefault": false
     },
     {
       "id": "Actions All Compounds",
-      "isDefault": false
-    },
-    {
-      "id": "All Compounds",
-      "isDefault": false
-    },
-    {
-      "id": "Compound Location",
-      "isDefault": false
-    },
-    {
-      "id": "Add Location",
-      "isDefault": false
-    },
-    {
-      "id": "Notify Success",
       "isDefault": false
     }
   ],

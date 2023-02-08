@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "SelectAOrder",
+    "name": "SubmitOrder",
     "datasource": {
       "name": "Order DB",
       "pluginId": "google-sheets-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "All Compounds",
+    "pageId": "OrderEntryForm",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -21,7 +21,7 @@
       "selfReferencingDataPaths": [],
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "INSERT_ONE"
         },
         "entityType": {
           "data": "ROWS"
@@ -34,7 +34,7 @@
         },
         "projection": {
           "data": [
-            "OrderID",
+            "Order ID",
             "Collaborator",
             "Category"
           ]
@@ -45,6 +45,9 @@
         "range": {
           "data": ""
         },
+        "rowObjects": {
+          "data": "{\n\t\"LabOrderID\" : {{Generator.getUUID()}},\n\t\"OrderID\": {{OrderID_input.text}},\n\t\"Target\" : {{Target_input.text}},\n\t\"TrackingID\": {{TrackingIDInput.text}},\n\t\"Collaborator\": {{Collaborator_select.selectedOptionValue}},\n\t\"Category\": {{Form_select.selectedOptionValue}},\n\t\"AdditionalNotes\": {{Notes_input.text}},\n\t\"ShippedDate\": {{Date_pick.selectedDate}},\n\t\"PlatemapAvailable\": {{PlateMap_option.selectedOptionValue}},\n\t\"AssignedBy\": \"Saswati Panda\"\t\n}"
+        },
         "sheetName": {
           "data": "AllOrders"
         },
@@ -54,41 +57,42 @@
         "smartSubstitution": {
           "data": true
         },
-        "sortBy": {
-          "data": [
-            {
-              "column": "",
-              "order": "Ascending"
-            }
-          ]
-        },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "condition": "AND",
-            "children": [
-              {
-                "condition": "LT"
-              }
-            ]
+            "condition": "AND"
           }
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Collaborator_select.selectedOptionValue",
+      "Date_pick.selectedDate",
+      "Form_select.selectedOptionValue",
+      "Generator.getUUID()",
+      "Notes_input.text",
+      "OrderID_input.text",
+      "PlateMap_option.selectedOptionValue",
+      "Target_input.text",
+      "TrackingIDInput.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "All Compounds_SelectAOrder",
+  "id": "OrderEntryForm_SubmitOrder",
   "deleted": false,
-  "gitSyncId": "6312614d9316f9675669ac84_6318eed01df89313e257ca18"
+  "gitSyncId": "6312614d9316f9675669ac84_6318e446754d3647bfacd495"
 }

@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "Generator",
-    "pageId": "Vendor Add Order",
+    "pageId": "OrderEntryForm",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Vendor Add Order_Generator",
+  "id": "OrderEntryForm_Generator",
   "deleted": false,
   "gitSyncId": "6312614d9316f9675669ac84_6318e97d1df89313e257c9c4"
 }
