@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "All Compounds",
+    "pageId": "AllCompounds",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -84,7 +84,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "All Compounds_SELECT_ALL_COMPOUNDS",
+  "id": "AllCompounds_SELECT_ALL_COMPOUNDS",
   "deleted": false,
   "gitSyncId": "6312614d9316f9675669ac84_63e691be1e242279f5910a00"
 }
