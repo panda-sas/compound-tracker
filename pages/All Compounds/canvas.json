@@ -1270,7 +1270,7 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "TextLocationFetchCopy1",
+                      "widgetName": "TextCollabTypeDetail",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -1367,7 +1367,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "TextLocationFetchCopy",
+                      "widgetName": "TextCDDUrl",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -2027,7 +2027,7 @@
                       "text": "Collaborator/Vendor/Lab-grown :",
                       "key": "wez2f92rty",
                       "isDeprecated": false,
-                      "rightColumn": 18,
+                      "rightColumn": 16,
                       "textAlign": "LEFT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "tv0qtnc6kh",
@@ -2785,7 +2785,7 @@
               "originalTopRow": 9,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 53,
+              "originalBottomRow": 51,
               "minDynamicHeight": 10
             }
           ]
