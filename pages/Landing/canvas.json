@@ -587,6 +587,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "backgroundColor"
                 }
               ],
               "children": [
@@ -745,7 +748,7 @@
                       "widgetId": "92jqjhknuh",
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#003B4A",
+                      "textColor": "#FFFFFF",
                       "version": 1,
                       "parentId": "6eh5umlzph",
                       "renderMode": "CANVAS",
@@ -806,7 +809,7 @@
               ],
               "borderWidth": "0",
               "key": "hu0xmabz35",
-              "backgroundColor": "#93c5fd",
+              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
               "isDeprecated": false,
               "rightColumn": 56,
               "dynamicHeight": "FIXED",
