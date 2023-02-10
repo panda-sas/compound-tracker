@@ -11,6 +11,10 @@
     {
       "id": "OpenOrders",
       "isDefault": false
+    },
+    {
+      "id": "All Compounds",
+      "isDefault": false
     }
   ],
   "viewMode": false,
