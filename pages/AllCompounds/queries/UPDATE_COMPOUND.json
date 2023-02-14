@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "SELECT_ALL_COMPOUNDS",
+    "name": "UPDATE_COMPOUND",
     "datasource": {
       "name": "sid-tamu-drive",
       "pluginId": "google-sheets-plugin",
@@ -21,7 +21,7 @@
       "selfReferencingDataPaths": [],
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "UPDATE_ONE"
         },
         "entityType": {
           "data": "ROWS"
@@ -41,6 +41,9 @@
         "range": {
           "data": ""
         },
+        "rowObjects": {
+          "data": "{{\n{...AllCompoundsTable.selectedRow }\n}}"
+        },
         "sheetName": {
           "data": "Compounds"
         },
@@ -50,41 +53,34 @@
         "smartSubstitution": {
           "data": true
         },
-        "sortBy": {
-          "data": [
-            {
-              "column": "Target",
-              "order": "Ascending"
-            }
-          ]
-        },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "condition": "AND",
-            "children": [
-              {
-                "condition": "LT"
-              }
-            ]
+            "condition": "AND"
           }
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.rowObjects.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "\n{...AllCompoundsTable.selectedRow }\n"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "AllCompounds_SELECT_ALL_COMPOUNDS",
+  "id": "AllCompounds_UPDATE_COMPOUND",
   "deleted": false,
-  "gitSyncId": "6312614d9316f9675669ac84_63e691be1e242279f5910a00"
+  "gitSyncId": "6312614d9316f9675669ac84_63eab2a9291ab5434833e077"
 }

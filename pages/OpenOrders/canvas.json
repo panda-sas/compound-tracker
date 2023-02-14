@@ -193,7 +193,8 @@
               "columnWidthMap": {
                 "task": 245,
                 "step": 62,
-                "status": 75
+                "status": 75,
+                "Scientist": 119
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -265,7 +266,7 @@
                   "cellBackground": "#FFFFFF"
                 },
                 "Project": {
-                  "allowCellWrapping": false,
+                  "allowCellWrapping": true,
                   "index": 2,
                   "width": 150,
                   "originalId": "Project",
@@ -377,7 +378,7 @@
                   "cellBackground": "#FFFFFF"
                 },
                 "ShipmentDate": {
-                  "allowCellWrapping": false,
+                  "allowCellWrapping": true,
                   "index": 6,
                   "width": 150,
                   "originalId": "ShipmentDate",
